@@ -1,0 +1,76 @@
+/*
+将段落元素里的文本改规定样式
+p{
+	color: red;
+  	width: 500px;
+  	border: 1px solid black;
+}
+
+把列表元素 主标题元素 改成红色
+li, h1 {
+  color: red;
+}
+
+*/
+
+/*网页的所有元素继承规定样式*/
+html {
+  /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+  font-size: 10px;
+  /* Google fonts 输出的 CSS */
+  font-family: 'Open Sans', sans-serif;
+  
+  /*将整个页面的背景颜色设置为规定的颜色*/
+  background-color: #00531F;
+  
+ 
+}
+
+/*文档体格式设置*/
+body {
+  width: 600px; /*页面永远保持600像素宽*/
+  margin: 0 auto; /*第一个值表示上方和下方 第二个值表示左边和右边 auto是个特殊值，水平方向左右对称*/
+  background-color: #FF9500; /*指定背景颜色*/
+  padding: 0 20px 20px 20px; /*内边距   上 右 下 左*/
+  border: 5px solid black; /*5像素黑色实线边框*/
+}
+
+/*下来为文档体内的元素（<h1>、<li> 和 <p>）设置字号。将标题居中显示，并为正文设置行高和字间距，
+ 从而提高页面的可读性
+ */
+h1 {
+  	/*color: red;*/
+  	font-size: 60px;
+  	text-align: center;
+  	
+  	margin: 0;
+    padding: 20px 0;
+    color: #00531F;
+    text-shadow: 3px 3px 1px black;
+}
+
+
+
+p, li {
+  	font-size: 16px;
+  	/* line-height 后而可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+  	line-height: 2; /*行间距*/
+  	letter-spacing: 1px; /*字间距*/
+}
+
+/*设置图像居中*/
+img {
+  display: block; /*给与图像块级行为 使图像有外边距*/
+  margin: 0 auto;
+}
+
+/*
+padding：即内边距，围绕着内容（比如段落）的空间。
+border：即边框，紧接着内边距的线。
+margin：即外边距，围绕元素外部的空间。
+width ：元素的宽度
+background-color ：元素内容和内边距底下的颜色
+color ：元素内容（通常是文本）的颜色
+text-shadow ：为元素内的文本设置阴影
+display ：设置元素的显示模式（暂略）
+ */
